@@ -60,6 +60,7 @@ index=net* http_method=GET
 | stats count by src_ip dest_ip _time
 | where count > 3
 
+```markdown
 ## Cron Persistence — Persistence (T1053.003)
 
 **What was observed**
@@ -81,7 +82,7 @@ index=net* http_method=GET
 index=linux "@reboot"
 | table _time host user message
 
-
+```markdown
 ## Host & Network Discovery — Discovery (T1082 / T1016 / T1033)
 
 **What was observed**
@@ -105,7 +106,7 @@ index=linux process_name=bash
 | stats count values(command) by host user _time
 | where count >= 3
 
-
+```markdown
 ## SSH Lateral Movement Attempt — Lateral Movement (T1021.004)
 
 **What was observed**
@@ -125,6 +126,7 @@ index=linux process_name=bash
 ```spl
 index=linux "Connection refused"
 
+```markdown
 ## HTTP Data Exfiltration — Exfiltration (T1041)
 
 **What was observed**
