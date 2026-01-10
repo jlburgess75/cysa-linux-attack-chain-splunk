@@ -94,7 +94,7 @@ index=net* http_method=GET
 | bin _time span=1m
 | stats count by src_ip dest_ip _time
 | where count > 3
-
+```
 
 ## Cron Persistence — Persistence (T1053.003)
 
