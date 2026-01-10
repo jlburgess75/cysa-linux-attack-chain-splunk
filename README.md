@@ -67,11 +67,10 @@ The lab is aligned with CompTIA CySA+ (CS0-003) and focuses on **behavioral dete
 index=linux process_name=bash
 (command="*payload.sh*" OR command="*chmod +x*")
 | table _time host user command
+```
 
 
-
-
-## 🟠 2️⃣ HTTP BEACONING — T1071.001
+##  HTTP BEACONING — T1071.001
 
 
 ## HTTP Beaconing — Command & Control (T1071.001)
