@@ -69,11 +69,11 @@ index=linux process_name=bash
 | table _time host user command
 
 
----
+
 
 ## 🟠 2️⃣ HTTP BEACONING — T1071.001
 
-```markdown
+
 ## HTTP Beaconing — Command & Control (T1071.001)
 
 ### What was observed
