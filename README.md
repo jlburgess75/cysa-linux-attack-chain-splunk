@@ -96,11 +96,6 @@ index=net* http_method=GET
 | where count > 3
 
 
----
-
-## 🟡 3️⃣ CRON PERSISTENCE — T1053.003
-
-```markdown
 ## Cron Persistence — Persistence (T1053.003)
 
 ### What was observed
@@ -124,11 +119,9 @@ index=linux "@reboot"
 
 
 
----
+##  HOST & NETWORK DISCOVERY — T1082 / T1016 / T1033
 
-## 🟢 4️⃣ HOST & NETWORK DISCOVERY — T1082 / T1016 / T1033
 
-```markdown
 ## Host & Network Discovery — Discovery (T1082 / T1016 / T1033)
 
 ### What was observed
@@ -156,11 +149,6 @@ index=linux process_name=bash
 | where count >= 3
 
 
----
-
-## 🔵 5️⃣ SSH LATERAL MOVEMENT ATTEMPT — T1021.004
-
-```markdown
 ## SSH Lateral Movement Attempt — Lateral Movement (T1021.004)
 
 ### What was observed
@@ -181,11 +169,6 @@ index=linux process_name=bash
 index=linux "Connection refused"
 
 
----
-
-## 🟣 6️⃣ HTTP DATA EXFILTRATION — T1041
-
-```markdown
 ## HTTP Data Exfiltration — Exfiltration (T1041)
 
 ### What was observed
