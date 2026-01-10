@@ -70,9 +70,6 @@ index=linux process_name=bash
 ```
 
 
-##  HTTP BEACONING — T1071.001
-
-
 ## HTTP Beaconing — Command & Control (T1071.001)
 
 ### What was observed
