@@ -184,6 +184,7 @@ index=linux "Connection refused"
 index=net* http_method=POST
 | stats sum(bytes_out) by src_ip dest_ip
 | where bytes_out > 50000
+|sort - total_bytes
 ```
 
 
