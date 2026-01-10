@@ -116,11 +116,7 @@ index=net* http_method=GET
 ```spl
 index=linux "@reboot"
 | table _time host user message
-
-
-
-##  HOST & NETWORK DISCOVERY — T1082 / T1016 / T1033
-
+```
 
 ## Host & Network Discovery — Discovery (T1082 / T1016 / T1033)
 
@@ -147,7 +143,7 @@ index=linux process_name=bash
 | bin _time span=2m
 | stats count values(command) by host user _time
 | where count >= 3
-
+```
 
 ## SSH Lateral Movement Attempt — Lateral Movement (T1021.004)
 
@@ -167,7 +163,7 @@ index=linux process_name=bash
 ### Splunk Detection Query
 ```spl
 index=linux "Connection refused"
-
+```
 
 ## HTTP Data Exfiltration — Exfiltration (T1041)
 
@@ -188,6 +184,7 @@ index=linux "Connection refused"
 index=net* http_method=POST
 | stats sum(bytes_out) by src_ip dest_ip
 | where bytes_out > 50000
+```
 
 
 
